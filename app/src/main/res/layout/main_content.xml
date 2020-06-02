@@ -485,137 +485,121 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="#FFF"
+        android:layout_height="@dimen/_54sdp"
+        android:background="@color/colorWhite"
+        android:weightSum="5"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnHome"
-            android:layout_weight="0.2"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="22dp"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
                 android:background="@drawable/ic_home"
                 android:layout_gravity="center"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Home"
+                android:fontFamily="@font/lora_regular"
                 android:textAlignment="center"/>
 
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnProfile"
-            android:layout_marginTop="15dp"
-            android:layout_weight="0.2"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="22dp"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
                 android:background="@drawable/ic_man_avatar"
                 android:layout_gravity="center"/>
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Profile"
+                android:fontFamily="@font/lora_regular"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:textAlignment="center"/>
 
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnList"
-            android:layout_weight="0.2"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/list"
                 android:layout_gravity="center"/>
 
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnFav"
-            android:layout_weight="0.2"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-
-            <ImageView
-                android:layout_width="22dp"
-                android:layout_height="20dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
                 android:background="@drawable/ic_love" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Favourite"
+                android:fontFamily="@font/lora_regular"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:textAlignment="center"/>
 
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnCart"
-            android:layout_marginTop="15dp"
-            android:layout_weight="0.2"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="22dp"
-                android:layout_height="20dp"
-                android:layout_margin="5dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
                 android:background="@drawable/ic_commerce_and_shopping"
                 android:layout_gravity="center"/>
 
-
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cart"
+                android:fontFamily="@font/lora_regular"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:textAlignment="center"/>
 
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-    </LinearLayout>
-
-
-
-
-
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </LinearLayout>
