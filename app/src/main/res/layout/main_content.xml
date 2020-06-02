@@ -241,7 +241,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             app:cardUseCompatPadding="true"
-            android:layout_height="@dimen/_100sdp">
+            android:layout_height="@dimen/_120sdp">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -250,8 +250,8 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/itemImg"
-                    android:layout_width="@dimen/_90sdp"
-                    android:layout_height="@dimen/_90sdp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/item" />
@@ -272,6 +272,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Large Box"
+                            android:fontFamily="@font/lora_regular"
                             android:textSize="@dimen/_16sdp" />
 
                         <androidx.appcompat.widget.AppCompatTextView
@@ -281,6 +282,7 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="textEnd"
                             android:text="$720"
+                            android:fontFamily="@font/lora_regular"
                             android:textSize="@dimen/_16sdp" />
 
                     </RelativeLayout>
@@ -289,15 +291,18 @@
                         style="?android:attr/ratingBarStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="@dimen/_5sdp"
                         android:src="@drawable/stars4" />
 
                     <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="@dimen/_5sdp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora_regular"
                         android:text="There are many variations." />
 
                     <RelativeLayout
+                        android:layout_marginTop="@dimen/_5sdp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
@@ -331,7 +336,7 @@
 
                         <androidx.appcompat.widget.LinearLayoutCompat
                             android:layout_alignParentRight="true"
-                            android:layout_width="@dimen/_80sdp"
+                            android:layout_width="@dimen/_100sdp"
                             android:layout_height="match_parent"
                             android:background="#1CCF25">
 
