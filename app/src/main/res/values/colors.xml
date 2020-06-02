@@ -3,6 +3,11 @@
     <color name="colorPrimary">#1B2A8F</color>
     <color name="colorPrimaryDark">#101D64</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorHighlight">#FFF</color>
+    <color name="colorHighlight">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTextView">#9a9db5</color>
+    <color name="colorBlackTextView">#111111</color>
 
 </resources>
