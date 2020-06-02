@@ -122,7 +122,6 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignup"
             android:layout_width="match_parent"
