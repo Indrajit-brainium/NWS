@@ -1,13 +1,12 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="?actionBarSize"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
@@ -16,47 +15,40 @@
             android:layout_height="match_parent"
             app:popupTheme="@style/AppTheme">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora_regular"
                     android:text="Home"
-                    android:textColor="#FFF"
-                    android:textSize="22sp"
-                    android:layout_marginTop="12dp"/>
-
-                <ImageView
-                    android:id="@+id/imgSearch"
-                    android:layout_width="26dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_search"/>
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_18sdp" />
 
                 <ImageView
                     android:id="@+id/imgNotification"
-                    android:layout_width="26dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ic_notifications"/>
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:src="@drawable/ic_notifications" />
 
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/imgNotification"
+                    android:src="@drawable/ic_search" />
 
-
+            </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
 
-
-
-
     </com.google.android.material.appbar.AppBarLayout>
-
-
 
     <include
         layout="@layout/main_content"
