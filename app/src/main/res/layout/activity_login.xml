@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash"
     android:orientation="vertical"
     tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="@dimen/_100sdp"
@@ -23,6 +28,7 @@
         android:layout_marginRight="@dimen/_30sdp"
         android:backgroundTint="@color/colorWhite"
         android:fontFamily="@font/lora_regular"
+        android:textColor="@color/colorWhite"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/colorWhite" />
@@ -37,17 +43,20 @@
         android:layout_marginRight="@dimen/_30sdp"
         android:backgroundTint="@color/colorWhite"
         android:fontFamily="@font/lora_regular"
+        android:textColor="@color/colorWhite"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="@color/colorWhite" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnForgotpassword"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_10sdp"
         android:text="Forgot password"
+        android:fontFamily="@font/lora_regular"
         android:textAlignment="center"
         android:textSize="@dimen/_12sdp"
         android:textColor="@color/colorTextView" />
@@ -72,30 +81,56 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
         android:text="Or"
+        android:fontFamily="@font/lora_regular"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_14sdp" />
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/btnFb"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_54sdp"
         android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginRight="@dimen/_30sdp"
-        android:src="@drawable/fb" />
+        android:background="@drawable/fb">
 
-    <androidx.appcompat.widget.AppCompatImageView
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/btnG"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_54sdp"
         android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginRight="@dimen/_30sdp"
-        android:src="@drawable/g" />
+        android:background="@drawable/g">
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -109,6 +144,7 @@
             android:textSize="@dimen/_12sdp" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" Sign Up"
@@ -119,4 +155,6 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</ScrollView>

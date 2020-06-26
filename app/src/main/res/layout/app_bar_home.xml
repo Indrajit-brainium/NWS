@@ -5,6 +5,7 @@
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -15,36 +16,55 @@
             android:layout_height="match_parent"
             app:popupTheme="@style/AppTheme">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    app:layout_anchor="@+id/appBarLayout"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_anchorGravity="start|center"
+                    app:srcCompat="@drawable/ic_menu" />
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/lora_regular"
-                    android:text="Home"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/_18sdp" />
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imgNotification"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="@dimen/_16sdp"
-                    android:src="@drawable/ic_notifications" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora_regular"
+                        android:text="Home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_18sdp" />
 
-                <ImageView
-                    android:id="@+id/imgSearch"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_toLeftOf="@+id/imgNotification"
-                    android:src="@drawable/ic_search" />
+                    <ImageView
+                        android:id="@+id/imgNotification"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:src="@drawable/ic_notifications" />
 
-            </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/imgNotification"
+                        android:src="@drawable/ic_search" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -55,5 +75,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="55dp" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
